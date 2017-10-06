@@ -65,6 +65,7 @@ header nav ul li.noCaps {
 	margin: auto;
 	background-color: #c6c6c6;
 	padding: 12px 0px;
+	font-size: 18px;
 }
 
 #brains .slash {
@@ -76,8 +77,54 @@ header nav ul li.noCaps {
 	border-bottom: 2px solid #ffff00;
 }
 
-
 /***********Hero***********/
+
+#hero {
+	background-image: url("../images/coworking.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	width: 100%;
+}
+
+
+aside.box {
+	background: rgba(255,255,255,0.75);
+	height: 270px;
+	width: 465px;
+	float: right;
+	margin: 35px 70px 35px;
+	box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 30px;
+}
+
+aside.box h2 {
+	font-weight: 700;
+}
+
+aside.box p {
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 1.5;
+	width: 70%;
+}
+
+aside.box button {
+	font-family: 'Oswald', sans-serif;
+	color: black;
+	background-color: #FFFF00;
+	font-weight: 700;
+	font-size: 18px;
+	width: 100%;
+	padding: 5px 0px;
+	margin-top: 20px;
+	border: 0;
+	outline: 0;
+	text-transform: uppercase;
+	border-radius: 5px;
+	box-shadow: 0 2px #cccb2c;
+}
 
 /***********Three Columns***********/
 
