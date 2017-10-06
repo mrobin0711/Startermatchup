@@ -128,4 +128,43 @@ aside.box button {
 
 /***********Three Columns***********/
 
+#threeColumns {
+	display: flex;
+	margin: 30px 100px;
+} 
+
+#threeColumns .column1 {
+	margin: 0px 30px;
+} 
+
+#threeColumns .column1 h2 {
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+#threeColumns .column1 p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 1.5;
+	width: 70%;	
+}
+
+#threeColumns .column1 button {
+	font-family: 'Oswald', sans-serif;
+	color: black;
+	background-color: #c6c6c6;
+	font-weight: 700;
+	font-size: 18px;
+	width: 100%;
+	padding: 5px 0px;
+	margin-top: 20px;
+	border: 0;
+	outline: 0;
+	text-transform: uppercase;
+	border-radius: 5px;
+	box-shadow: 0 2px #969696;
+}
+
 /***********Footer***********/
