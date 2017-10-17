@@ -39,12 +39,18 @@ header nav ul li {
 	padding-right: 25px;
 }
 
+
 header nav ul li.allCaps {
 	text-transform: uppercase;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
 	list-style: none;
 
+}
+
+header nav ul li.allCaps span {
+	background-color: #c6c6c6;
+	padding: 100% 5px;
 }
 
 header nav ul li.noCaps {
@@ -167,4 +173,85 @@ aside.box button {
 	box-shadow: 0 2px #969696;
 }
 
+/***********Contact Columns************/
+
+#grayBackground {
+	background-color: #C6C6C6;
+	height: 100%;
+}
+
+#flexColumns {
+	background-color: #C6C6C6;
+	height: 387px;
+	display: flex;
+	margin: 15px 55px;
+}
+
+#flexColumns .column2 {
+	margin: 0px 10px;
+	background-color: #fff;
+	height: 383px;
+	width: 24.625%;
+} 
+
+#flexColumns .column2 img {
+    display: block;
+    margin: auto;
+    height: 240px;
+    width: 90%;
+    padding-top: 10px;
+}
+
+#flexColumns .column2 p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1.5;
+	width: 90%;	
+	margin-left: 15px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+#flexColumns .column2 span {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	color: #fff;
+	background-color: #000;
+	border: .5px solid #000;
+	border-radius: 20px;
+	font-size: 16px;
+	line-height: 1.5;
+	margin-left: 15px;
+	margin-right: -12px;
+	padding: 4px 13px;
+}
+
+
+#flexColumns .column2 button {
+	font-family: 'Oswald', sans-serif;
+	color: black;
+	background-color: #FFFF00;
+	font-weight: 700;
+	font-size: 18px;
+	width: 90%;
+	padding: 5px 0px;
+	margin: 20px 10px 0px;
+	border: 0;
+	outline: 0;
+	text-transform: uppercase;
+	border-radius: 5px;
+	box-shadow: 0 2px #969696;
+}
+
 /***********Footer***********/
+
+footer {
+	background-color: #000;
+	color: #fff;
+	padding: 25px 75px;
+}
+
+footer p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
