@@ -1,3 +1,3 @@
 $('.hamburgerMenu').click(function() {
-	$('.hamburgerMenu').slideToggle('500');
+	$('nav').slideToggle('200');
 });
