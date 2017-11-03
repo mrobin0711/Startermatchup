@@ -345,3 +345,10 @@ aside.box button {
 /***********Footer***********/
 }
 
+footer {
+	background-color: black;
+    min-height: 50px;
+    color: white;
+    font-size: 10px;
+    padding: 24px 0px 0px 50px;
+}
