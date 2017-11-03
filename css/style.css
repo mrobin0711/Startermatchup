@@ -6,32 +6,207 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
-/***********Header***********/
 
 header {
 	background-color: black;
 	border-bottom: 2px solid #FFFF00;
-	height: 50px;
+	height: auto;
 	overflow: hidden;
-	padding: 15px 0px 0px 0px;
+	padding: 15px 0px 15px 0px;
 	margin-bottom: 0px;
 }
 
 header h1 {
 	color: #FFFF00;
-	padding: 0px 75px;
+	padding: 0px 25px;
 	font-family: 'Merriweather', serif;
 	font-weight: 700;
-	font-size: 24px;
+	font-size: 20px;
 	float: left;
 }
 
 header nav {
 	color: white;
+	margin-top: 35px;
+	margin-left: 25px;
+	padding-top: 6px;
+	display: block;
+}
+
+header nav ul li {
+	display: block;
+	padding-bottom: 15px;
+}
+
+header nav ul li.allCaps {
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	list-style: none;
+
+}
+
+header nav ul li.noCaps {
+	text-transform: none;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	list-style: none;
+	font-size: 14px;
+}
+
+.hamburgerMenu {
+	float: right;
+	width: 50px;
+	padding-right: 25px;
+	padding-top: 4px;
+	position: static;
+}
+
+.hamburgerMenu hr {
+	border: 2px solid yellow;
+	margin-bottom: 4px;
+
+}
+
+
+/***********Brains***********/
+
+#brains {
+	display: none;
+}
+
+/***********Hero***********/
+
+#hero {
+	background-image: url("../images/coworking.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 230px;
+	width: 100%;
+	overflow: hidden;
+	padding: 25px;
+}
+
+
+aside.box {
+	background: rgba(255,255,255,0.75);
+	max-height: 200px;
+	max-width: 400px;
+	float: right;
+	box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 30px;
+}
+
+aside.box h2 {
+	font-weight: 700;
+}
+
+aside.box p {
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 1.5;
+	width: 100%;
+}
+aside.box p span {
+	display: none;
+
+}
+
+aside.box button {
+	font-family: 'Oswald', sans-serif;
+	color: black;
+	background-color: #FFFF00;
+	font-weight: 700;
+	font-size: 18px;
+	width: 100%;
+	padding: 5px 0px;
+	margin-top: 20px;
+	border: 0;
+	outline: 0;
+	text-transform: uppercase;
+	border-radius: 5px;
+	box-shadow: 0 2px #cccb2c;
+}
+
+/***********Three Columns***********/
+
+#threeColumns {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	width: 100%;
+	margin: 0px 20px 0px 20px;
+} 
+
+#threeColumns .column1 {
+	padding-bottom: 50px;
+} 
+
+#threeColumns .column1 h2 {
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+#threeColumns .column1 p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 1.5;
+	width: 70%;	
+}
+
+#threeColumns .column1 button {
+	font-family: 'Oswald', sans-serif;
+	color: black;
+	background-color: #c6c6c6;
+	font-weight: 700;
+	font-size: 18px;
+	width: 100%;
+	padding: 5px 0px;
+	margin-top: 20px;
+	border: 0;
+	outline: 0;
+	text-transform: uppercase;
+	border-radius: 5px;
+	box-shadow: 0 2px #969696;
+}
+
+/**********************************/
+/**********************************/
+/**********************************/
+/**********************************/
+/**********************************/
+/**********************************/
+/**********************************/
+/**********************************/
+/**********************************/
+/***********Header***********/
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+header {
+	padding: 15px 0px 15px 0px;
+}
+
+header h1 {
+	padding: 0px 75px;
+	font-size: 24px;
+}
+
+.hamburgerMenu {
+		display: none;
+	}
+
+header nav {
+	color: white;
 	float: right;
 	margin-right: 50px;
+	margin-top: 0px;
 	padding-top: 6px;
+	display: inline;
 }
 
 header nav ul li {
@@ -54,10 +229,10 @@ header nav ul li.noCaps {
 	list-style: none;
 	font-size: 14px;
 }
-
 /***********Brains***********/
 
 #brains {
+	display: block;
 	font-family: 'Merriweather', serif;
 	font-style: italic;
 	font-weight: 700;
@@ -66,6 +241,8 @@ header nav ul li.noCaps {
 	background-color: #c6c6c6;
 	padding: 12px 0px;
 	font-size: 18px;
+	height: auto;
+	
 }
 
 #brains .slash {
@@ -80,20 +257,16 @@ header nav ul li.noCaps {
 /***********Hero***********/
 
 #hero {
-	background-image: url("../images/coworking.jpg");
-	background-size: cover;
-	background-position: center;
 	height: 400px;
-	width: 100%;
+	overflow: visible;
 }
-
 
 aside.box {
 	background: rgba(255,255,255,0.75);
-	height: 270px;
-	width: 465px;
+	height: auto;
+	max-height: 400px;
+	max-width: 300px;
 	float: right;
-	margin: 35px 70px 35px;
 	box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
 	font-family: 'Source Sans Pro', sans-serif;
 	padding: 30px;
@@ -107,7 +280,11 @@ aside.box p {
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 1.5;
-	width: 70%;
+	width: 100%;
+}
+aside.box p span {
+	display: inline;
+
 }
 
 aside.box button {
@@ -130,7 +307,6 @@ aside.box button {
 
 #threeColumns {
 	display: flex;
-	margin: 30px 100px;
 } 
 
 #threeColumns .column1 {
@@ -166,5 +342,6 @@ aside.box button {
 	border-radius: 5px;
 	box-shadow: 0 2px #969696;
 }
-
 /***********Footer***********/
+}
+
